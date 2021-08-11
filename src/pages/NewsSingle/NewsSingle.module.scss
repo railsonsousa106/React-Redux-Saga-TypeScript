@@ -1,0 +1,133 @@
+@import '../../assets/home/scss/variables';
+
+main.newsSinglePage {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+  }
+  h5 {
+    color: $purple;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 4.25rem;
+  }
+  p,
+  li,
+  span {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  span {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+  }
+  .particle {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .news {
+    padding: 7.5rem 0 3.5rem 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 830px;
+    .newsInner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .image {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 2.5rem;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .description {
+      img {
+        margin: 6.5rem 0 2.75rem 0;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 20px 0 rgba(0, 28, 110, 0.16);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main.newsSinglePage {
+    p {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+    }
+    span {
+      font-size: 0.875rem;
+    }
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-size: 0.875rem;
+      margin-bottom: 2rem;
+    }
+    .news {
+      padding: 1.5rem 0 3rem 0;
+      .image {
+        height: 200px;
+        margin-bottom: 2.5rem;
+      }
+      .description {
+        img {
+          margin: 2.5rem 0 1.75rem 0;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .newsSinglePage {
+    section {
+      overflow: hidden;
+    }
+    .news {
+      h1 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      h5 {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .newsInner {
+        opacity: 0;
+        transform: translate(0, 600px);
+      }
+    }
+  }
+}

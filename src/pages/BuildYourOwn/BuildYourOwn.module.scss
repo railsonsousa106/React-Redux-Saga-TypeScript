@@ -1,0 +1,892 @@
+@import '../../assets/home/scss/variables';
+
+main {
+  .backTop {
+    display: inline-block;
+    margin-left: 3.125rem;
+    color: #1f1f1f;
+  }
+}
+
+main.buildYourOwn {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.52;
+    margin-bottom: 0;
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: $yellowColor;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 24px;
+      }
+    }
+  }
+  h2 {
+    font-size: 2.375rem;
+    line-height: 1.42;
+    margin-bottom: 2.375rem;
+    &:before {
+      display: none;
+    }
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 26px;
+        left: 0;
+        width: 100%;
+        height: 17px;
+      }
+    }
+  }
+  h3 {
+    font-size: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 13rem auto;
+    color: $secondColor;
+  }
+  h5 {
+    font-size: 1.5625rem;
+    line-height: 1.36;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  .particle {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .overview {
+    padding: 5.625rem 0;
+    text-align: center;
+    h5 {
+      margin-bottom: 0;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+    .overviewInner {
+      text-align: right;
+      margin: 0 auto;
+      box-shadow: 0 15px 1.25rem 0 rgba(0, 28, 110, 0.43);
+      border-radius: 1.25rem;
+      position: relative;
+      cursor: pointer;
+      background-color: #f7f5ff;
+      overflow: hidden;
+    }
+  }
+  .security {
+    padding: 6.75rem 0 2.75rem 0;
+    text-align: center;
+    h2 {
+      font-size: 2.875rem;
+      line-height: 1.41;
+      margin-bottom: 1.75rem;
+    }
+    .securityInner {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      flex-wrap: wrap;
+      .securityItem {
+        border: 4px solid $secondColor;
+        padding: 1.75em 1.4375rem 3.75em 1.4375rem;
+        margin-bottom: 5.0625rem;
+        border-radius: 0.625rem;
+        width: 31.5%;
+        position: relative;
+        p {
+          color: $secondColor;
+          font-weight: 400;
+        }
+        &:nth-child(2) {
+          border: 4px solid transparent;
+          width: 67%;
+          img {
+            position: absolute;
+            width: 100%;
+            bottom: -4px;
+            left: 0;
+          }
+        }
+        &:nth-child(3) {
+          width: 28%;
+          border: 4px solid $yellowColor;
+          padding: 1.75em 2rem 3.75em 2rem;
+          p {
+            color: $yellowColor;
+          }
+        }
+        &:nth-child(4) {
+          width: 28%;
+          border: 4px solid $mainColor;
+          padding: 1.75em 2rem 3.75em 2rem;
+          p {
+            color: $mainColor;
+          }
+        }
+        &:nth-child(5) {
+          width: 28%;
+          border: 4px solid $purple;
+          padding: 1.75em 2rem 3.75em 2rem;
+          p {
+            color: $purple;
+          }
+        }
+      }
+      h6 {
+        font-size: 1.5625rem;
+        margin-bottom: 1rem;
+        &:before {
+          display: none;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        line-height: 1.9;
+      }
+    }
+  }
+  .automation {
+    padding: 0;
+    text-align: center;
+    h2 {
+      font-size: 2.875rem;
+      margin-bottom: 2.75rem;
+      &:before {
+        width: 40%;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.9;
+    }
+    .automationInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .automationTop {
+        border: 4px solid #27b3b6;
+        border-radius: 0.625rem;
+        width: 100%;
+        padding: 4em 1rem;
+        margin-bottom: 8rem;
+        img {
+          width: 56%;
+        }
+      }
+      .automationCenter {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .description,
+        img {
+          width: 40%;
+        }
+        .description {
+          p:nth-child(1) {
+            background-color: #0d988c;
+            color: $whiteColor;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .sales {
+    padding: 2rem 0;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 62%;
+      background-color: rgba(59, 186, 188, 0.5);
+    }
+    .salesInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .salesLeft {
+      width: 47.5%;
+      display: flex;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .salesRight {
+      width: 37.25%;
+      padding-top: 22%;
+      h2 {
+        cursor: pointer;
+        font-size: 2.875rem;
+        margin-bottom: 2.5rem;
+        &:active,
+        &:hover {
+          opacity: 0.7;
+        }
+        &:nth-child(1) span:before {
+          background-color: $mainColor;
+        }
+        &:nth-child(2) span:before {
+          background-color: $secondColor;
+        }
+      }
+    }
+  }
+  .cases {
+    padding: 8.625rem 0 7rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.75rem;
+    }
+    img {
+      width: 5.875rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        width: 32%;
+        margin-bottom: 0.5rem;
+        a {
+          font-size: 1.4375rem;
+          line-height: 2.82;
+          font-weight: 700;
+          position: relative;
+          text-decoration: none;
+          color: $blackColor;
+          &.active:before,
+          &:active:before,
+          &:hover:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: $yellowColor;
+          }
+        }
+      }
+    }
+  }
+  .experience {
+    padding: 9.5rem 0;
+    background-color: $purple;
+    * {
+      color: $whiteColor;
+    }
+    h2 {
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+      &:before {
+        width: 62%;
+        top: inherit;
+        height: 18px;
+        bottom: 7px;
+      }
+    }
+    p {
+      line-height: 1.9;
+    }
+    .experienceInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .experienceLeft {
+      width: 51.5%;
+      .experienceImage {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 15px 20px 0 rgba(0, 28, 110, 0.43);
+        &:hover,
+        &:active {
+          &:before {
+            background-color: rgba(255, 255, 255, 0);
+          }
+          .play {
+            opacity: 0.7;
+          }
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.31);
+        }
+        .play {
+          position: absolute;
+          z-index: 1;
+          left: 50%;
+          top: 57%;
+          width: 17%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .experienceRight {
+      width: 44%;
+      a {
+        font-size: 1.25rem;
+      }
+    }
+    .tags {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.75rem;
+      span {
+        border: 1px solid $whiteColor;
+        border-radius: 0.3125rem;
+        text-align: center;
+        line-height: 1;
+        padding: 0.65rem 0.75rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .optimization {
+    background-color: $whiteColor;
+    * {
+      color: $blackColor;
+    }
+    .experienceInner {
+      flex-direction: row-reverse;
+    }
+    .experienceLeft {
+      .experienceImage {
+        box-shadow: none;
+      }
+    }
+    .tags {
+      span {
+        border: 1px solid $blackColor;
+      }
+    }
+  }
+  .particle {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main.buildYourOwn {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.52;
+      margin-bottom: 3rem;
+      span {
+        &:before {
+          top: 21px;
+          height: 13px;
+        }
+      }
+    }
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    h3 {
+      font-size: 1.125rem;
+      max-width: 400px;
+      margin: 0 auto 4rem auto;
+    }
+    h5 {
+      font-size: 1rem;
+      line-height: 1.89;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5625;
+    }
+    .container {
+      padding: 0 3rem;
+    }
+    .overview {
+      padding: 3.5rem 0 2.5rem 0;
+      h1 {
+        margin-bottom: 3rem;
+      }
+    }
+    .security {
+      padding: 1rem 0 0 0;
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.85;
+        margin-bottom: 1.5rem;
+      }
+      .securityInner {
+        .securityItem {
+          width: 100%;
+          margin-bottom: 3.5rem;
+          padding: 1.75em 1rem;
+          &:nth-child(1),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            width: 48%;
+            order: 5;
+            padding: 1.75em 1rem;
+          }
+          &:nth-child(2) {
+            padding: 0;
+            width: 100%;
+            img {
+              position: relative;
+            }
+          }
+        }
+        h6 {
+          font-size: 1.125rem;
+        }
+      }
+    }
+    .automation {
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+      .automationInner {
+        .automationTop {
+          margin-bottom: 4rem;
+          padding: 2.25em 1rem;
+        }
+        .automationCenter {
+          .description,
+          img {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .sales {
+      margin: 1.25rem 0;
+      padding: 3rem 0;
+      background-color: rgba(59, 186, 188, 0.5);
+      &:before {
+        background-color: transparent;
+      }
+      .salesInner {
+        flex-direction: column-reverse;
+      }
+      .salesLeft {
+        width: 74%;
+        max-width: 500px;
+        margin-bottom: 1rem;
+      }
+      .salesRight {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        h2 {
+          line-height: 1.42;
+          margin-bottom: 3rem;
+          span {
+            &:before {
+              top: 26px;
+              height: 17px;
+            }
+          }
+        }
+      }
+    }
+    .cases {
+      padding: 2.625rem 0;
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+      }
+      img {
+        width: 3.875rem;
+        margin-bottom: 1.75rem;
+      }
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .experience {
+      padding: 4.5rem 0;
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        span:before {
+          top: 26px;
+          height: 17px;
+        }
+      }
+      .experienceInner {
+        flex-direction: column;
+      }
+      .experienceImage {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .experienceLeft {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+      .experienceRight {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    .backTop {
+      margin-left: 1.75rem;
+      padding: 0 !important;
+    }
+  }
+  main.buildYourOwn {
+    p {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 10px;
+          height: 7px;
+        }
+      }
+    }
+    h3 {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin: 0 auto 2.5rem auto;
+    }
+    h5 {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      background-color: $purple;
+      color: $whiteColor;
+      position: relative;
+      width: 100vw;
+      left: -1.1875rem;
+    }
+    .container {
+      padding: 0 1.1875rem;
+    }
+    .particle {
+      z-index: -1;
+    }
+    .overview {
+      padding: 0 0 1.5rem 0;
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: $purple;
+        color: $whiteColor;
+        opacity: 1;
+        width: 100vw;
+        left: -1.1875rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.22);
+        border-radius: 0 0 50px 50px;
+        padding: 0 0 1rem 0;
+        span:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    .security {
+      h2 {
+        font-size: 1rem;
+      }
+      .securityInner {
+        h6 {
+          font-size: 1rem;
+          margin-bottom: 0.25rem;
+        }
+        .securityItem {
+          padding: 1rem 0.5rem;
+          box-shadow: 0 8px 15px 0 rgba(0, 28, 110, 0.15);
+          border-width: 2px;
+          p {
+            line-height: 1.29;
+          }
+          &:nth-child(2) {
+            box-shadow: none;
+          }
+          &:nth-child(1),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            border-width: 2px;
+            width: 100%;
+            padding: 1rem 0.5rem 1.5rem 0.5rem;
+          }
+        }
+      }
+    }
+    .automation {
+      .automationInner {
+        .automationTop {
+          padding: 1rem;
+          border: 2px solid #27b3b6;
+          img {
+            width: 100%;
+          }
+        }
+        .automationCenter {
+          flex-direction: column;
+          .description,
+          img {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+          .description {
+            p {
+              line-height: 1.29;
+            }
+            p:nth-child(1) {
+              color: $blackColor;
+              background-color: transparent;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .sales {
+      margin: 3.5rem 0 0.5rem 0;
+      padding: 2rem 0 4.75rem 0;
+      .salesRight {
+        h2 {
+          font-size: 1.25rem;
+          line-height: 2.25;
+          margin-bottom: 0;
+          span:before {
+            top: 13px;
+            height: 10px;
+          }
+        }
+      }
+      .salesLeft {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    .cases {
+      img {
+        width: 2rem;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 1rem;
+        line-height: 1.5625;
+        margin-bottom: 1.75rem;
+      }
+      ul {
+        flex-direction: column;
+        li {
+          width: 100%;
+          margin-bottom: 0;
+          a {
+            font-size: 0.75rem;
+            line-height: 2.26;
+          }
+        }
+      }
+    }
+    .experience {
+      padding: 2.56rem 0;
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+        span:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+      p {
+        line-height: 1.29;
+      }
+      .experienceRight {
+        a {
+          font-size: 0.875rem;
+          padding: 0.75rem 1rem;
+        }
+      }
+      .tags {
+        margin-bottom: 0.5rem;
+        span {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .buildYourOwn {
+    section {
+      overflow: hidden;
+      position: relative;
+    }
+    .overview {
+      .overviewTitle {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .overviewInner {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+    }
+    .security {
+      h2 {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      h3 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .securityInner {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+    }
+    .automation {
+      h2 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .automationInner {
+        opacity: 0;
+        transform: translate(0, 600px);
+      }
+    }
+    .sales {
+      .salesLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .salesRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .cases {
+      .casesImage {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .casesTitle {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      ul {
+        opacity: 0;
+        transform: translate(0, 600px);
+      }
+    }
+    .experience {
+      .experienceLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .experienceRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .optimization {
+      .experienceLeft {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .experienceRight {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+    }
+  }
+}

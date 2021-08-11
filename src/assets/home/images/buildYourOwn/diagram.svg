@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="544.881" height="343.651" viewBox="0 0 544.881 343.651">
+  <g id="Group_1779" data-name="Group 1779" transform="translate(-187.874 -3452.204)">
+    <path id="Path_31808" data-name="Path 31808" d="M319.635,690.516q7.182-.187,14.388-.454c145.133-5.358,306.4-35.1,480.132-105.858" transform="translate(-131.746 2931.094)" fill="none" stroke="#248332" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_31809" data-name="Path 31809" d="M319.635,847.831a649.283,649.283,0,0,0,178.858-26.189c201.491-59.3,319.267-202.144,365.6-266.083" transform="translate(-131.746 2896.939)" fill="none" stroke="#0063b0" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Ellipse_160" data-name="Ellipse 160" cx="6.634" cy="6.634" r="6.634" transform="translate(229.544 3611.94)" fill="#45a735"/>
+    <circle id="Ellipse_161" data-name="Ellipse 161" cx="6.634" cy="6.634" r="6.634" transform="translate(440.566 3582.187)" fill="#45a735"/>
+    <circle id="Ellipse_162" data-name="Ellipse 162" cx="6.634" cy="6.634" r="6.634" transform="translate(672.98 3508.664)" fill="#0d988c"/>
+    <circle id="Ellipse_163" data-name="Ellipse 163" cx="6.634" cy="6.634" r="6.634" transform="translate(229.544 3738.136)" fill="#002b7f"/>
+    <circle id="Ellipse_164" data-name="Ellipse 164" cx="6.634" cy="6.634" r="6.634" transform="translate(411.442 3694.697)" fill="#002b7f"/>
+    <circle id="Ellipse_165" data-name="Ellipse 165" cx="6.634" cy="6.634" r="6.634" transform="translate(568.861 3605.306)" fill="#002b7f"/>
+    <text id="Chatbots" transform="translate(204.678 3591.087)" fill="#145629" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="2.911" y="12">Chatbot</tspan></text>
+    <text id="Intelligent_Assistants" data-name="Intelligent Assistants" transform="translate(415.962 3545.387)" fill="#145629" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0.102" y="12">Intelligent </tspan><tspan x="1.757" y="26.2">Assistant</tspan></text>
+    <text id="Digital_Employees" data-name="Digital Employees" transform="translate(604.212 3474.537)" fill="#146375" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="18.1" y="12">Digital </tspan><tspan x="1.416" y="26.2">Employees</tspan></text>
+    <text id="Process_Optimization" data-name="Process Optimization" transform="translate(195.858 3756.855)" fill="#002581" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="17.133" y="12">Process </tspan><tspan x="0.906" y="26.2">Optimization</tspan></text>
+    <text id="Workflow_Automation" data-name="Workflow Automation" transform="translate(377.756 3715.662)" fill="#002581" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="10.705" y="12">Workflow </tspan><tspan x="2.66" y="26.2">Automation</tspan></text>
+    <text id="RPA" transform="translate(574.893 3623.308)" fill="#002581" font-size="15" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="12">RPA</tspan></text>
+  </g>
+</svg>

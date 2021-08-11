@@ -1,0 +1,564 @@
+@import '../../assets/home/scss/variables';
+
+main.helpCenter {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.52;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2.875rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 33px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+      }
+    }
+  }
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  h5 {
+    color: $purple;
+    font-size: 1.375rem;
+    line-height: 1.36;
+    margin-bottom: 0.5rem;
+  }
+  h6 {
+    color: $blackColor;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    margin-bottom: 2.5rem;
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 33px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+      }
+    }
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  a,
+  li {
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 1;
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 12px;
+        left: 0;
+        width: 100%;
+        height: 11px;
+      }
+    }
+  }
+  .particle {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .help {
+    padding: 8rem 0 6.5rem 0;
+    text-align: center;
+    .helpInner {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: #707070;
+      }
+      form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 2.5rem auto;
+        label {
+          position: relative;
+          .search,
+          .arrow {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+            transition: 0.3s linear;
+            &:hover,
+            &:active {
+              opacity: 0.7;
+            }
+          }
+          .search {
+            left: 3rem;
+            width: 2rem;
+          }
+          .arrow {
+            right: 3rem;
+            width: 3.125rem;
+          }
+          input {
+            border-radius: 20px;
+            border: 4px solid $purple;
+            height: 100px;
+            padding-left: 6rem;
+            font-size: 1.25rem;
+            &::placeholder {
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .plans {
+    padding: 11rem 0 5.75rem 0;
+    background-color: $purple;
+    text-align: center;
+    h2 {
+      color: $whiteColor;
+      margin-bottom: 2.25rem;
+    }
+    .panel {
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .plan {
+      padding: 2.5rem 6rem 1.5rem 6rem;
+      background-color: $whiteColor;
+      box-shadow: 0 15px 20px 0 rgba(0, 28, 110, 0.16);
+      border-radius: 2.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      width: 48%;
+      position: relative;
+      overflow: hidden;
+      p {
+        color: #707070;
+        margin-bottom: 2.75rem;
+        text-align: center;
+      }
+      button {
+        margin-top: auto;
+        font-size: 1.375rem;
+        line-height: 1.13;
+        margin-bottom: 2rem;
+        padding: 1.5rem 3.25rem;
+      }
+    }
+  }
+  .faq {
+    padding: 8rem 0 8rem 0;
+    .faqInfo {
+      max-width: 925px;
+      margin: 0 auto 8rem auto;
+    }
+    .question {
+      p {
+        color: #707070;
+      }
+    }
+    h2,
+    h5 {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      span {
+        color: $purple;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    p {
+      margin-bottom: 2.5rem;
+    }
+  }
+  .connect {
+    background-color: #9cdcdd;
+    padding: 7.25rem 0;
+    .connectInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .connectLeft {
+      width: 48%;
+      text-align: center;
+      h2:nth-child(1) span:before {
+        background-color: #e84312;
+      }
+      h2:nth-child(2) span:before {
+        background-color: #31a8a8;
+      }
+    }
+    .connectRight {
+      width: 48%;
+      text-align: right;
+      a {
+        display: inline-flex;
+        align-items: center;
+        padding: 1.75rem 4.75rem;
+        font-size: 3.25rem;
+        font-weight: 600;
+        img {
+          width: 2.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main.helpCenter {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.52;
+      margin-bottom: 7rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.85;
+      margin-bottom: 2rem;
+      span {
+        &:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    h4 {
+      font-size: 1.125rem;
+      margin-bottom: 0.75rem;
+    }
+    h5 {
+      font-size: 1.125rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5625;
+    }
+    h6 {
+      margin-bottom: 1.25rem;
+    }
+    li,
+    a {
+      font-size: 1rem;
+      span:before {
+        top: 11px;
+        height: 8px;
+      }
+    }
+    .help {
+      padding: 1.5rem 0 5.5rem 0;
+      .helpInner {
+        form {
+          max-width: 502px;
+          margin: 0 auto 1.25rem auto;
+          label {
+            .search {
+              left: 2.25rem;
+            }
+            .arrow {
+              right: 2.25rem;
+            }
+            input {
+              padding-left: 5rem;
+              height: 72px;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+    .plans {
+      padding: 6rem 0 4rem 0;
+      .plan {
+        padding: 2.25rem 2rem 0.75rem 2rem;
+        p {
+          font-size: 1.25rem;
+          margin-bottom: 1.75rem;
+        }
+        button {
+          font-size: 1rem;
+          padding: 1rem 2.75rem;
+          margin-bottom: 1.75rem;
+        }
+      }
+      .panel {
+        margin-bottom: 3rem;
+      }
+    }
+    .connect {
+      padding: 5.25rem 0 7.25rem 0;
+      h2 {
+        font-size: 2.875rem;
+        margin-bottom: 0;
+        span:before {
+          top: 30px;
+          height: 22px;
+        }
+      }
+      .connectInner {
+        flex-direction: column;
+      }
+      .connectLeft {
+        width: 100%;
+        margin-bottom: 2.5rem;
+      }
+      .connectRight {
+        width: 100%;
+        text-align: center;
+        a {
+          font-size: 2.75rem;
+          padding: 1rem 3.25rem;
+        }
+      }
+    }
+    .faq {
+      padding: 6.5rem 0 3rem 0;
+      .faqInfo {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+      }
+      p {
+        margin-bottom: 1.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main.helpCenter {
+    h1 {
+      margin-bottom: 3.25rem;
+    }
+    h2 {
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-size: 0.875rem;
+      line-height: 1.28;
+    }
+    h6 {
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    li {
+      font-size: 0.875rem;
+      span {
+        &:before {
+          top: 9px;
+          height: 8px;
+        }
+      }
+    }
+    p,
+    a {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+      span:before {
+        top: 9px;
+        height: 7px;
+      }
+    }
+    .help {
+      padding: 0 0 2rem 0;
+      h5 {
+        background: $purple;
+        color: $whiteColor;
+        position: relative;
+        z-index: 3;
+        left: -1.1875rem;
+        width: 100vw;
+      }
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: $purple;
+        color: $whiteColor;
+        opacity: 1;
+        width: 100vw;
+        left: -1.1875rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.22);
+        border-radius: 0 0 50px 50px;
+        padding: 0 0 1rem 0;
+      }
+      .helpInner {
+        p {
+          text-align: center;
+        }
+        form {
+          label {
+            .search {
+              width: 1.25rem;
+              left: 1rem;
+            }
+            .arrow {
+              width: 1.75rem;
+              right: 1.5rem;
+            }
+            input {
+              border-radius: 10px;
+              height: 50px;
+              border: 1px solid $purple;
+              padding-left: 3rem;
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+    .plans {
+      padding: 2.25rem 0 0.25rem 0;
+      h2 {
+        margin-bottom: 1.25rem;
+      }
+      .plansInner {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+      .panel {
+        margin-bottom: 0;
+        flex-direction: column;
+      }
+      .plan {
+        width: 100%;
+        padding: 1.25rem 1.5rem 0.25rem 1.5rem;
+        border-radius: 1.5625rem;
+        box-shadow: none;
+        margin-bottom: 3.25rem;
+        p {
+          font-size: 0.875rem;
+        }
+        button {
+          font-size: 0.875rem;
+          padding: 0.75rem 2.25rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+    .faq {
+      padding: 3.25rem 0 1rem 0;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      .faqInfo {
+        font-size: 0.875rem;
+        margin: 0 auto 2.75rem auto;
+      }
+    }
+    .connect {
+      padding: 2.5rem 0 2.25rem 0;
+      h2 {
+        font-size: 1.25rem;
+        span:before {
+          top: 12px;
+          height: 11px;
+        }
+      }
+      .connectInner {
+        flex-direction: column;
+      }
+      .connectLeft {
+        width: 100%;
+      }
+      .connectRight {
+        width: 100%;
+        a {
+          font-size: 1.75rem;
+          padding: 1rem 2.25rem;
+          img {
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .helpCenter {
+    section {
+      overflow: hidden;
+    }
+    .help {
+      h1 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .helpInner {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+    }
+    .faq {
+      .faqInner {
+        transform: translate(600px, 0);
+      }
+    }
+  }
+}

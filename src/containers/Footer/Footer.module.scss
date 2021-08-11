@@ -1,0 +1,132 @@
+@import '../../assets/home/scss/variables';
+
+@media (any-hover: hover) {
+  footer.footer {
+  }
+}
+
+footer.footer {
+  background: $purple;
+  color:      $whiteColor;
+  .footerInner {
+    max-width: 1530px;
+    margin:    0 auto;
+    padding:   0 1rem;
+  }
+  .footerTop {
+    padding:       5.5rem 0 2.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-align:    center;
+    img {
+      width: 14.3125rem;
+    }
+  }
+  .footerCenter {
+    padding:         3.35rem 0 4.25rem 0;
+    border-bottom:   1px solid rgba(255, 255, 255, 0.5);
+    display:         flex;
+    justify-content: space-between;
+    ul {
+      padding-right: 1rem;
+      img {
+        max-width:  2.25rem;
+        max-height: 2.25rem;
+      }
+      li {
+        font-size:     1rem;
+        color:         $whiteColor;
+        font-weight:   600;
+        margin-bottom: 1rem;
+        cursor:        pointer;
+        &:first-child {
+          margin-bottom: 2rem;
+        }
+        &.social {
+          display:     flex;
+          align-items: flex-end;
+          a {
+            margin-right: 1rem;
+          }
+        }
+        a {
+          display:         inline-block;
+          font-weight:     300;
+          color:           $whiteColor;
+          text-decoration: none;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  .footerBottom {
+    padding:         1.75rem 0;
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    p {
+      margin-bottom: 0;
+      color:         $whiteColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  footer.footer {
+    .footerTop {
+      padding: 3.25rem 0 2.75rem 0;
+    }
+    .footerCenter {
+      padding:         4.25rem 0 1.5rem 0;
+      flex-wrap:       wrap;
+      justify-content: space-between;
+      ul {
+        width:         auto;
+        margin-bottom: 3rem;
+        &:nth-child(1) {
+          width:      100%;
+          text-align: center;
+          li {
+            margin-bottom: 1rem;
+            &.social {
+              justify-content: center;
+            }
+          }
+        }
+        li {
+          &:first-child {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer.footer {
+    .footerTop {
+      padding: 1.75rem 0 1rem 0;
+      img {
+        width: 8.5rem;
+      }
+    }
+    .footerCenter {
+      padding:         3rem 0 0 0;
+      justify-content: center;
+      ul {
+        min-width:     100%;
+        text-align:    center;
+        margin-bottom: 2rem;
+      }
+    }
+    .footerBottom {
+      padding:        0.75rem 0;
+      flex-direction: column;
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

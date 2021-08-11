@@ -1,0 +1,160 @@
+@import '../../../../../../assets/home/scss/variables';
+
+.popup {
+  position:        fixed;
+  z-index:         10;
+  left:            0;
+  top:             0;
+  width:           100%;
+  height:          100%;
+  background:      rgba(0, 0, 0, 0.8);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  .popupInner {
+    background:    $whiteColor;
+    border-radius: 8px;
+    max-width:     700px;
+    margin:        0 1rem;
+    padding:       4rem 2rem;
+    text-align:    center;
+    position:      relative;
+    width:         100%;
+    .close {
+      width:    2rem;
+      height:   2rem;
+      position: absolute;
+      right:    1rem;
+      top:      1rem;
+      cursor:   pointer;
+      &:before,
+      &:after {
+        content:    '';
+        position:   absolute;
+        left:       50%;
+        top:        50%;
+        transform:  translate(-50%, -50%) rotate(-45deg);
+        width:      80%;
+        height:     2px;
+        background: $blackColor;
+      }
+      &:after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &:active,
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .logo {
+      width:  250px;
+      margin: 0 auto 2rem auto;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      span {
+        position: relative;
+        z-index:  3;
+        &:before {
+          content:          '';
+          position:         absolute;
+          z-index:          -1;
+          width:            100%;
+          height:           17px;
+          bottom:           0;
+          background-color: $yellowColor;
+        }
+      }
+    }
+    form {
+      display:         flex;
+      align-items:     center;
+      justify-content: space-between;
+      flex-wrap:       wrap;
+      label {
+        margin-bottom: 2rem;
+        width:         48%;
+        position:      relative;
+        input,
+        select {
+          border-radius:      8px;
+          background:         transparent;
+          box-shadow:         none;
+          border:             1px solid $secondColor;
+          height:             53px;
+          -webkit-appearance: none;
+          &:hover,
+          &:active,
+          &:focus {
+            border: 1px solid $purple;
+          }
+        }
+      }
+      .button {
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+        width:           48%;
+        margin-bottom:   2rem;
+        button {
+          width: 300px;
+        }
+      }
+    }
+    .success {
+      border:        0.125rem solid $secondColor;
+      border-radius: 0.625rem;
+      padding:       1rem;
+      font-weight:   400;
+      animation:     opacityAnim 1.5s linear forwards;
+      line-height:   1.4;
+      color:         $secondColor;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .popup {
+    .popupInner {
+      padding: 2rem 1rem;
+      .logo {
+        width:         150px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        margin-bottom: 1rem;
+        font-size:     1.5rem;
+        span:before {
+          height: 13px;
+        }
+      }
+      form {
+        label {
+          margin-bottom: 1.5rem;
+          width:         100%;
+          input,
+          select {
+            padding: 0.75rem;
+            height:  45px;
+          }
+        }
+        .button {
+          width:         100%;
+          margin-bottom: 0;
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

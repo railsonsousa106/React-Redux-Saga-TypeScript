@@ -1,0 +1,200 @@
+@import '../../assets/home/scss/variables';
+
+main.newsPage {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.52;
+    margin-bottom: 7rem;
+  }
+  p,
+  span {
+    font-size: 1rem;
+    line-height: 1.875;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  span {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .particle {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .news {
+    padding: 7.5rem 0 3.5rem 0;
+    text-align: center;
+    .newsInner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+      margin-bottom: -8.5rem;
+    }
+    .newsItem {
+      width: 31%;
+      background: #f7f5ff;
+      box-shadow: 0 15px 20px rgba(0, 28, 110, 0.16);
+      border-radius: 40px;
+      margin-bottom: 8.5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s linear;
+      &:hover,
+      &:active {
+        box-shadow: 0 15px 20px rgba(0, 28, 110, 0.06);
+      }
+      .image {
+        margin-bottom: 2rem;
+        height: 285px;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .description {
+        padding: 0 14% 10% 14%;
+        text-align: center;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        .info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h4 {
+          margin-bottom: 1.5rem;
+        }
+        p {
+          flex: 1 0 auto;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+        }
+        a {
+          width: 50%;
+          font-size: 0.875rem;
+          font-weight: 300;
+          padding: 0.75rem 1rem;
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+    position: relative;
+    z-index: 2;
+    span {
+      border-radius: 5px;
+      border: 1px solid $purple;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      font-size: 1.25rem;
+      color: $purple;
+      cursor: pointer;
+      font-weight: 600;
+      &.active,
+      &:hover,
+      &:active {
+        background-color: $purple;
+        color: $whiteColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main.newsPage {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.52;
+      margin-bottom: 6rem;
+    }
+    .news {
+      padding: 1.5rem 0 5rem 0;
+      .newsInner {
+        margin-bottom: -4rem;
+      }
+      .newsItem {
+        width: 48%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  main.newsPage {
+    p {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+    }
+    span {
+      font-size: 0.875rem;
+    }
+    h1 {
+      margin-bottom: 3.75rem;
+    }
+    .news {
+      padding: 0 0 3rem 0;
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: $purple;
+        color: $whiteColor;
+        opacity: 1;
+        width: 100vw;
+        left: -1.1875rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.22);
+        border-radius: 0 0 50px 50px;
+        padding: 0 0 1rem 0;
+      }
+      .newsItem {
+        width: 100%;
+        border-radius: 25px;
+        .image {
+          height: 200px;
+        }
+        .description {
+          padding: 0 6% 10% 6%;
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .newsPage {
+    section {
+      overflow: hidden;
+    }
+    .news {
+      h1 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .newsInner {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+    }
+  }
+}

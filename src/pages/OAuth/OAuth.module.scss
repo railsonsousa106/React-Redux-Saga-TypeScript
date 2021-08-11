@@ -1,0 +1,13 @@
+@import '../../assets/home/scss//variables';
+
+main.OAuth {
+  section {
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 30vh;
+    }
+  }
+}

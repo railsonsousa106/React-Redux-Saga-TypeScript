@@ -1,0 +1,366 @@
+@import '../../assets/home/scss/variables';
+
+main.partners {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.52;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2.375rem;
+    line-height: 1.42;
+    margin-bottom: 2.375rem;
+    &:before {
+      display: none;
+    }
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 26px;
+        left: 0;
+        width: 100%;
+        height: 17px;
+      }
+    }
+  }
+  h4 {
+    font-size: 2.375rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1.5625rem;
+    line-height: 1.36;
+  }
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  .particle {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .help {
+    padding: 4.5rem 0 3.5rem 0;
+    text-align: center;
+    .helpInner {
+      margin-top: -3.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .helpLeft {
+      width: 31%;
+      text-align: left;
+    }
+    .helpRight {
+      width: 60%;
+      svg {
+        width: 100%;
+      }
+    }
+    .helpBtn {
+      display: inline-flex;
+      padding: 1.75rem 3.75rem;
+      font-size: 1.375rem;
+      margin-top: 1.75rem;
+    }
+  }
+  .logos {
+    padding: 7.75rem 0 10.75rem 0;
+    background-color: $purple;
+    > div {
+      max-width: 1725px;
+    }
+    .logosInner {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: $whiteColor;
+      box-shadow: 0 15px 20px rgba(0, 28, 110, 0.16);
+      border-radius: 15px;
+      padding: 5.75rem 9.5rem;
+    }
+    .logosItem {
+      display: flex;
+      img {
+        width: 8.75rem;
+      }
+    }
+  }
+  .connect {
+    padding: 2rem 0 0 0;
+    background: #9cdcdd;
+    overflow: hidden;
+    .connectInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      a {
+        display: flex;
+      }
+    }
+    .man {
+      width: 29%;
+      position: relative;
+      top: 30px;
+    }
+    .connectDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2,
+      a {
+        color: $blackColor;
+        font-size: 2.875rem;
+        line-height: 1.42;
+        margin-bottom: 2.375rem;
+        font-weight: 700;
+        &.contact {
+          cursor: pointer;
+          &:hover,
+          &:active {
+            opacity: 0.7;
+          }
+        }
+      }
+      .contact span {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          background-color: #ffd17a;
+          top: 32px;
+          left: 0;
+          width: 100%;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main.partners {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.52;
+      margin-bottom: 6rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    h5 {
+      font-size: 1.125rem;
+      line-height: 1.89;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5625;
+    }
+    h6 {
+      font-size: 1rem;
+      line-height: 1;
+    }
+    .help {
+      padding: 1.5rem 0 5rem 0;
+      .helpInner {
+        margin-top: 0;
+      }
+      .helpLeft {
+        width: 50%;
+      }
+      .helpRight {
+        width: 50%;
+      }
+      .helpBtn {
+        padding: 1rem 2.5rem;
+        margin-top: 2.25rem;
+        font-size: 1rem;
+      }
+    }
+    .logos {
+      padding: 7.25rem 0;
+      .logosInner {
+        padding: 2.25rem 0;
+      }
+      .logosItem {
+        img {
+          width: 3.5rem;
+        }
+      }
+    }
+    .connect {
+      padding: 6rem 0 0 0;
+      .man {
+        width: 51%;
+        max-width: 320px;
+      }
+      .connectInner {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main.partners {
+    p {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      margin-bottom: 3.75rem;
+    }
+    h2 {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 10px;
+          height: 7px;
+        }
+      }
+    }
+    h5 {
+      font-size: 0.875rem;
+      line-height: 1.28;
+    }
+    .help {
+      padding: 0 0 3rem 0;
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: $purple;
+        color: $whiteColor;
+        opacity: 1;
+        width: 100vw;
+        left: -1.1875rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.22);
+        border-radius: 0 0 50px 50px;
+        padding: 0 0 1rem 0;
+      }
+      .helpInner {
+        flex-direction: column-reverse;
+      }
+      .helpLeft {
+        width: 100%;
+        text-align: center;
+      }
+      .helpRight {
+        width: 72%;
+        margin-bottom: 3rem;
+      }
+      .helpBtn {
+        padding: 0.5rem 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+    .logos {
+      padding: 0.25rem 0 2.25rem 0;
+      .logosInner {
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .logosItem {
+        img {
+          width: 4.125rem;
+        }
+      }
+    }
+    .connect {
+      padding: 3rem 0 0 0;
+      .man {
+        width: 90%;
+      }
+      .connectDescription {
+        h2,
+        a {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+        .contact span:before {
+          top: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .partners {
+    section {
+      overflow: hidden;
+    }
+    .help {
+      h1 {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .helpLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .helpRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .logos {
+      .logosInner {
+        opacity: 0;
+        transform: translate(0, 600px);
+      }
+    }
+    .connect {
+      .connectDescription {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .man {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+  }
+}

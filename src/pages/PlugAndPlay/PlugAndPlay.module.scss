@@ -1,0 +1,772 @@
+@import '../../assets/home/scss/variables';
+
+main.plugAndPlay {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.52;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2.375rem;
+    line-height: 1.42;
+    margin-bottom: 2.375rem;
+    &:before {
+      display: none;
+    }
+    span {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #ffd17a;
+        top: 26px;
+        left: 0;
+        width: 100%;
+        height: 17px;
+      }
+    }
+  }
+  h5 {
+    font-size: 1.5625rem;
+    line-height: 1.36;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  .particle {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    canvas {
+      width: 100%;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .digital {
+    padding: 5rem 0 4rem 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .digitalInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-weight: 600;
+      }
+    }
+    .digitalLeft {
+      width: 46%;
+      .bannerBtn {
+        padding: 1.875rem 5rem;
+      }
+    }
+    .digitalRight {
+      width: 51%;
+    }
+  }
+  .howDo {
+    padding: 8rem 0;
+    text-align: center;
+    background-color: $purple;
+    h2,
+    p {
+      color: $whiteColor;
+    }
+    p {
+      line-height: 2.45rem;
+    }
+    .howDoInner {
+      display: flex;
+      justify-content: space-between;
+    }
+    .howDoLeft,
+    .howDoRight {
+      width: 41%;
+      display: flex;
+      flex-direction: column;
+      .natural,
+      .automation {
+        background-color: #f7f5ff;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 528px;
+      }
+    }
+  }
+  .why {
+    padding: 8rem 0 7rem 0;
+    text-align: center;
+    position: relative;
+    canvas {
+      height: 100%;
+      object-fit: contain;
+    }
+    .whyTitle,
+    .whyImage {
+      margin-bottom: 6.25rem;
+      border: 4px solid #43b5bd;
+      border-radius: 0.625rem;
+      padding: 3.5rem 7.75rem 0.5rem 7.75rem;
+      max-width: 1088px;
+      p {
+        line-height: 2.5rem;
+        color: $secondColor;
+        font-weight: 400;
+      }
+    }
+    .whyImage {
+      margin-bottom: 8.25rem;
+      border: 4px solid #ef5513;
+      margin-left: auto;
+      padding: 3.5rem 11.75rem;
+    }
+    .whyBottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5 {
+        color: $secondColor;
+        text-align: left;
+      }
+      p {
+        line-height: 2.5rem;
+      }
+      .whyBottomLeft {
+        width: 50%;
+      }
+      .whyBottomRight {
+        width: 39%;
+      }
+    }
+  }
+  .employees {
+    padding: 8.75rem 0;
+    text-align: center;
+    background: $purple;
+    position: relative;
+    * {
+      color: $whiteColor;
+    }
+    p {
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .employeesInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .employeesLeft {
+      width: 50%;
+      letter-spacing: 1.3px;
+      text-align: left;
+      a {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.875rem;
+        color: $yellowColor;
+        margin-top: 2.5rem;
+        img {
+          width: 2.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .employeesRight {
+      width: 46%;
+      h2,
+      h6 {
+        color: $blackColor;
+      }
+    }
+    .itemInfo {
+      margin-left: auto;
+      text-align: center;
+      max-width: 538px;
+      background-color: $whiteColor;
+      border-radius: 2.5rem;
+      padding: 3rem 3rem 3rem 3rem;
+      box-shadow: 0 15px 20px 0 rgba(0, 28, 110, 0.16);
+      h6 {
+        font-size: 1.125rem;
+      }
+      .itemTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        img {
+          height: 17rem;
+          object-fit: contain;
+          object-position: left;
+          width: auto;
+        }
+      }
+      .itemTitle {
+        width: 50%;
+        h2 {
+          margin-bottom: 1rem;
+          font-size: 56px;
+          &:before {
+            display: none;
+          }
+        }
+        a {
+          color: $mainColor;
+          background-color: rgba(255, 209, 122, 0.27);
+          width: 13rem;
+          border-radius: 0.625rem;
+          font-weight: 300;
+          padding: 0.875rem 1rem;
+          font-size: 1.125rem;
+        }
+      }
+      .works {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0 3.25rem 0;
+        img {
+          max-height: 2.75rem;
+          margin: 0 0.5rem;
+        }
+      }
+      .imgWrapper {
+        position: relative;
+        margin: 0 0.5rem;
+      }
+      .comingSoon {
+        color: $secondColor;
+        position: absolute;
+        text-align: center;
+        margin: 0.2rem 0.5rem 0 0.5rem;
+        font-size: 14px;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a {
+          width: 17rem;
+          height: 88px;
+          font-size: 1.875rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &.alex {
+        .itemTitle {
+          a {
+            background-color: rgba(232, 67, 18, 0.27);
+            color: $mainColor;
+          }
+        }
+      }
+      &.drew {
+        .itemTitle {
+          a {
+            background-color: rgba(120, 96, 250, 0.27);
+            color: $purple;
+          }
+        }
+      }
+    }
+    &.alex {
+      background-color: $whiteColor;
+      * {
+        color: $blackColor;
+      }
+      .employeesInner {
+        flex-direction: row-reverse;
+      }
+      .employeesLeft {
+        p {
+          color: #414141;
+        }
+        a {
+          color: $purple;
+          img {
+            filter: invert(0);
+          }
+        }
+      }
+      .itemInfo {
+        margin-left: inherit;
+        margin-right: auto;
+        background-color: #f7f5ff;
+      }
+    }
+  }
+  .sales {
+    background-color: rgba(59, 186, 188, 0.5);
+    .salesInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .salesLeft {
+      width: 53%;
+      display: flex;
+      align-items: flex-start;
+    }
+    .salesRight {
+      width: 37.25%;
+      h2 {
+        margin-bottom: 0;
+        cursor: pointer;
+        &:hover,
+        &:active {
+          opacity: 0.7;
+        }
+        &:nth-child(1) span:before {
+          background-color: $mainColor;
+        }
+        &:nth-child(2) span:before {
+          background-color: $secondColor;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main.plugAndPlay {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.52;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 13px;
+          height: 10px;
+        }
+      }
+    }
+    h5 {
+      font-size: 1.125rem;
+      line-height: 1.89;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5625;
+    }
+    .container {
+      padding: 0 3rem;
+    }
+    .digital {
+      padding: 1.5rem 0 3.5rem 0;
+      .digitalLeft {
+        width: 45%;
+        .bannerBtn {
+          padding: 1rem 3rem;
+        }
+      }
+    }
+    .howDo {
+      padding: 3.75rem 0;
+      p {
+        line-height: 1.5625;
+      }
+      .howDoRight,
+      .howDoLeft {
+        width: 48%;
+      }
+    }
+    .why {
+      padding: 4rem 0 3.75rem 0;
+      .whyTitle,
+      .whyImage {
+        padding: 1.5rem 1.75rem;
+        p {
+          line-height: 1.5625;
+        }
+      }
+      .whyTitle {
+        padding: 1.75rem 2rem;
+        margin-bottom: 3.25rem;
+      }
+      .whyImage {
+        padding: 2.5rem 6.75rem;
+        margin-bottom: 3.25rem;
+      }
+      .whyBottom {
+        flex-direction: column-reverse;
+        p {
+          line-height: 1.5625;
+        }
+        h5 {
+          margin-bottom: 0;
+        }
+        .whyBottomRight {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        .whyBottomLeft {
+          width: 69%;
+        }
+      }
+    }
+    .employees {
+      padding: 2rem 0 4.5rem 0;
+      h2 {
+        font-size: 2.875rem;
+        span {
+          &:before {
+            top: 26px;
+            height: 17px;
+          }
+        }
+      }
+      .employeesInner {
+        flex-direction: column;
+      }
+      .employeesLeft {
+        width: 100%;
+        margin-bottom: 2rem;
+        a {
+          margin-bottom: 2.5rem;
+        }
+      }
+      .employeesRight {
+        width: 100%;
+      }
+      .itemInfo {
+        margin: 0 auto;
+      }
+      &.alex {
+        .employeesInner {
+          flex-direction: column;
+        }
+        .itemInfo {
+          margin: 0 auto;
+        }
+      }
+    }
+    .sales {
+      padding: 0 0 2rem 0;
+      .salesInner {
+        flex-direction: column;
+      }
+      .salesLeft {
+        width: 100%;
+        margin-bottom: 5rem;
+        max-width: 500px;
+      }
+      .salesRight {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          margin-bottom: 2rem;
+          font-size: 2.375rem;
+          line-height: 1.42;
+          span {
+            &:before {
+              top: 26px;
+              height: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main.plugAndPlay {
+    p {
+      font-size: 0.875rem;
+      line-height: 1.28;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1.375rem;
+      span {
+        &:before {
+          top: 10px;
+          height: 7px;
+        }
+      }
+    }
+    h5 {
+      font-size: 0.875rem;
+      line-height: 1.28;
+    }
+    .container {
+      padding: 0 1.1875rem;
+    }
+    .particle {
+      z-index: -1;
+    }
+    .digital {
+      padding: 0 0 2.5rem 0;
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: $purple;
+        color: $whiteColor;
+        opacity: 1;
+        width: 100vw;
+        left: -1.1875rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 8px 20px 0 rgba(21, 67, 202, 0.22);
+        border-radius: 0 0 50px 50px;
+        padding: 0 0 1rem 0;
+      }
+      .digitalInner {
+        flex-direction: column-reverse;
+        p {
+          font-weight: 400;
+        }
+      }
+      .digitalLeft {
+        width: 100%;
+        .bannerBtn {
+          padding: 0.5rem 2rem;
+        }
+      }
+      .digitalRight {
+        width: 100%;
+        margin-bottom: 4.75rem;
+      }
+    }
+    .howDo {
+      padding: 2.75rem 0;
+      .howDoInner {
+        flex-direction: column;
+      }
+      .howDoLeft {
+        width: 100%;
+        .natural {
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+          height: 100%;
+        }
+      }
+      .howDoRight {
+        width: 100%;
+        .automation {
+          margin-top: 2rem;
+          min-height: 283px;
+          height: 100%;
+        }
+      }
+    }
+    .why {
+      padding: 3rem 0 2.75rem 0;
+      .whyTitle {
+        padding: 0.5rem 1rem;
+        box-shadow: 0 8px 15px 0 rgba(0, 28, 110, 0.16);
+        margin-bottom: 2.75rem;
+      }
+      .whyImage {
+        padding: 0;
+        border: 4px solid transparent;
+        margin-bottom: 2.75rem;
+      }
+      .whyBottomRight {
+        h5 {
+          margin-bottom: 0.5rem;
+        }
+      }
+      .whyBottom {
+        p {
+          line-height: 1.28;
+        }
+        .whyBottomLeft {
+          width: 100%;
+        }
+      }
+    }
+    .employees {
+      padding: 3rem 0 3rem 0;
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        span {
+          &:before {
+            top: 13px;
+            height: 8px;
+          }
+        }
+      }
+      p {
+        line-height: 1.28;
+      }
+      .employeesLeft {
+        text-align: center;
+        a {
+          margin-top: 1.25rem;
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          line-height: 1.5625;
+          justify-content: center;
+          img {
+            width: 1.25rem;
+          }
+        }
+      }
+      .itemInfo {
+        padding: 1rem 2rem 1rem 2rem;
+        max-width: 300px;
+        h6 {
+          font-size: 0.5rem;
+        }
+        .itemTop {
+          margin-bottom: 0.35rem;
+          img {
+            height: 8.5rem;
+          }
+        }
+        .itemTitle {
+          h2 {
+            font-size: 1.6875rem;
+            line-height: 1.44;
+          }
+          a {
+            font-size: 0.625rem;
+            width: 7rem;
+            padding: 0.25rem 1rem;
+          }
+        }
+        .works {
+          margin: 0.25rem 0 1.5rem 0;
+          img {
+            max-height: 1.25rem;
+          }
+        }
+        .buttons {
+          a {
+            font-size: 0.875rem;
+            width: 8.9375rem;
+            height: 33px;
+          }
+        }
+      }
+    }
+    .sales {
+      padding: 2rem 0;
+      .salesLeft {
+        width: 100%;
+        margin-bottom: 2.75rem;
+      }
+      .salesRight {
+        h2 {
+          font-size: 1.25rem;
+          line-height: 1.5;
+          margin-bottom: 0.5rem;
+          span {
+            &:before {
+              top: 13px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// animations
+@media screen and (min-width: 767px) {
+  .plugAndPlay {
+    section {
+      overflow: hidden;
+    }
+    .digital {
+      .casesTitle {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .digitalLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .digitalRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .howDo {
+      h2 {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .howDoLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .howDoRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .why {
+      .whyTitle {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .whyImage {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+      .whyBottom {
+        opacity: 0;
+        transform: translate(0, 600px);
+      }
+    }
+    .employees {
+      .employeesLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+        h2 {
+          opacity: 0;
+          transform: translate(-600px, 0);
+        }
+      }
+      .employeesRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+    .sales {
+      .salesLeft {
+        opacity: 0;
+        transform: translate(-600px, 0);
+      }
+      .salesRight {
+        opacity: 0;
+        transform: translate(600px, 0);
+      }
+    }
+  }
+}
